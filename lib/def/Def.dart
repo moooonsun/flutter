@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
-  const Home({super.key});
+class Def extends StatelessWidget {
+  const Def({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,10 +10,10 @@ class Home extends StatelessWidget {
       body: Container(
         child: Column(
           children: [
-            ElevatedButton(onPressed: (){
-              print('HI ');
-              Navigator.pushNamed(context,'/def');
-            }, child: Text('기본 Widget'))
+            Text('Hello World'),
+            Text('Flutter'),
+            Icon(Icons.star),
+            Image.asset('aaa.png')//경로
           ],
         ),
       ),
